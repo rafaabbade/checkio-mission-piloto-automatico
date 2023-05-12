@@ -1,19 +1,19 @@
-def soma(a,b):
+def ajustar_velocidade(a, b, c):
     # escreva aqui seu código
     return None
 
 
 print("Example:")
-print(soma(3,2))
+print(ajustar_velocidade(0, 2, 6))
 
 # As funções assert são utilizadas para verificar se o resultado da função chamada é o esperado
-# testa a função com números positivos como parâmetros
-assert soma(2, 3) == 5 
-    
-# testa a função com um número negativo como parâmetro
-assert soma(-1, 5) == 4
-    
-# testa a função com zero como parâmetro
-assert soma(0, 0) == 0
+# Teste 1: Carro B precisa acelerar
+assert ajustar_velocidade(0, 2, 6) == 1
+
+# Teste 2: Carro B precisa desacelerar
+assert ajustar_velocidade(0, 4, 6) == -1
+
+# Teste 3: Carro B precisa manter a velocidade atual
+assert ajustar_velocidade(0, 3, 6) == 0
     
 print("Seu código passou pelos testes, clique em Check para avançar!")
